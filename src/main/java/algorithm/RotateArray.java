@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Arrays;
 
-public class Rotate {
+public class RotateArray {
     public static void main(String[] args) {
         int[] nums = { -1, -100, 3, 99 };
         int[] numsForDesc = { -1, -100, 3, 99 };

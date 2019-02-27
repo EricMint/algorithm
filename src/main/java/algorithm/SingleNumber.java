@@ -12,9 +12,14 @@ public class SingleNumber {
 
     private static int getSingleNumber(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
+            if (i == nums.length - 1) {
+                return nums[nums.length - 1];
+            }
+
             boolean isSingle = true;
             for (int j = 0; j < nums.length; j++) {
                 if ((i != j) && (nums[i] == nums[j])) {
+                    nums[j] = nums[i + 1];
                     isSingle = false;
                     break;
                 }
